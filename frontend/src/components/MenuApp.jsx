@@ -215,8 +215,8 @@ export default function MenuApp() {
 
       {isCartOpen && (
         <div className="fixed inset-0 z-50 flex justify-end">
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setIsCartOpen(false)} />
-          <aside className="relative w-full sm:max-w-md bg-white h-full shadow-2xl flex flex-col animate-slide-in">
+          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0" onClick={() => setIsCartOpen(false)} />
+          <aside className="relative z-10 w-full sm:max-w-md bg-white h-full shadow-2xl flex flex-col animate-slide-in">
             <div className="p-5 border-b flex items-center justify-between">
               <h3 className="text-xl font-bold">{t("yourOrder")}</h3>
               <button onClick={() => setIsCartOpen(false)} className="w-9 h-9 rounded-full hover:bg-gray-100 flex items-center justify-center text-2xl">×</button>
